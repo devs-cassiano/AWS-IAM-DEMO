@@ -1,0 +1,220 @@
+# ============================================
+# .gitignore - PRODUÇÃO APENAS
+# ============================================
+# Este .gitignore garante que apenas arquivos
+# necessários para produção sejam commitados
+# ============================================
+
+# ==============================
+# DEPENDÊNCIAS E CACHE
+# ==============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+*.tgz
+package-lock.json.bak
+
+# ==============================
+# VARIÁVEIS DE AMBIENTE SENSÍVEIS
+# ==============================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production.local
+.env.staging
+.env.staging.local
+
+# ==============================
+# LOGS E DADOS TEMPORÁRIOS
+# ==============================
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+.lock-wscript
+
+# ==============================
+# ARQUIVOS DE TESTE (TODOS)
+# ==============================
+tests/
+test/
+__tests__/
+*test*.js
+*.test.js
+*.spec.js
+jest.config.js
+jest.*.config.js
+coverage/
+.nyc_output
+*.lcov
+test-*.js
+test-create-account.js
+test-iam-core.js
+test-policy-api.js
+test-policy-creation.js
+
+# ==============================
+# ARQUIVOS DE DESENVOLVIMENTO
+# ==============================
+debug-server.js
+fix_test_syntax.js
+dev-*.js
+development-*.js
+add-production-files.sh
+
+# ==============================
+# SCRIPTS DE DEMO E TESTE
+# ==============================
+demo-*.sh
+test-*.sh
+e2e-*.sh
+dev-*.sh
+examples/
+demo/
+playground/
+demo-granular-permissions.sh
+e2e-auth-test.sh
+test-authorization.sh
+test-iam-roles.sh
+test-permissions.sh
+
+# ==============================
+# DOCUMENTAÇÃO DE DESENVOLVIMENTO
+# ==============================
+CLEANUP_VERIFICATION_SUMMARY.md
+PERMISSION_MANAGEMENT_GUIDE.md
+PERMISSION_ROUTES_CLEANUP.md
+PERMISSION_ROUTES_STANDARDIZATION.md
+PERMISSION_TESTS_SUMMARY.md
+SYNTAX_FIXES_SUMMARY.md
+PRODUCTION_FILES_GUIDE.md
+DEV_*.md
+DEVELOPMENT_*.md
+TODO.md
+NOTES.md
+docs/MOCK_REPOSITORIES.md
+docs/PERMISSION_MANAGEMENT_GUIDE.md
+
+# ==============================
+# FERRAMENTAS DE BUILD E CACHE
+# ==============================
+build/
+dist/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+
+# ==============================
+# BANCOS DE DADOS LOCAIS
+# ==============================
+*.sqlite
+*.sqlite3
+*.db
+.dynamodb/
+data/
+database/
+db/
+
+# ==============================
+# IDE E EDITORES
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vim/
+.emacs.d/
+
+# ==============================
+# SISTEMA OPERACIONAL
+# ==============================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==============================
+# BACKUP E ARQUIVOS TEMPORÁRIOS
+# ==============================
+*.backup
+*.bak
+*.tmp
+*.temp
+*~
+.#*
+\#*#
+
+# ==============================
+# CERTIFICADOS E CHAVES
+# ==============================
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+ssl/
+certificates/
+
+# ==============================
+# MONITORAMENTO E MÉTRICAS
+# ==============================
+newrelic_agent.log
+.monitor/
+metrics/
+monitoring/
+
+# ==============================
+# DOCKER LOCAIS
+# ==============================
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.dev.yml
+
+# ==============================
+# SCRIPTS DE DESENVOLVIMENTO
+# ==============================
+scripts/clean-database-keep-system.sql
+scripts/README.md
+scripts/assign-root-roles.js
+scripts/init-system-roles.js
+scripts/cleanup-tokens.js
+
+# ==============================
+# OUTROS ARQUIVOS SENSÍVEIS
+# ==============================
+.secrets
+.credentials
+auth.json
+service-account.json
+firebase-config.json
+
+# ============================================
+# ARQUIVOS DE PRODUÇÃO PERMITIDOS:
+# ============================================
+# ✅ package.json, package-lock.json
+# ✅ server.js, Dockerfile, docker-compose.yml
+# ✅ .env.example, .env.blacklist.example
+# ✅ README.md, .gitignore
+# ✅ src/ (todo o código fonte)
+# ✅ migrations/ (migrações do banco)
+# ✅ scripts/ (scripts de produção)
+# ✅ docs/ (documentação essencial)
+# ============================================

@@ -1,0 +1,187 @@
+# ==============================================================================
+# IAM Platform - Production .gitignore
+# Inclui apenas arquivos essenciais para produção
+# ==============================================================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# Logs
+logs/
+*.log
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==============================================================================
+# ARQUIVOS DE TESTE E DESENVOLVIMENTO (EXCLUIR)
+# ==============================================================================
+
+# Diretórios de teste
+**/tests/
+**/test/
+**/__tests__/
+**/__test__/
+
+# Arquivos de teste específicos
+*test*.js
+*test*.ts
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Arquivos Mock (desenvolvimento apenas)
+**/Mock*.js
+**/mock*.js
+Mock*.js
+mock*.js
+
+# Arquivos de demo e exemplo
+demo-*.sh
+test-*.sh
+test-*.js
+e2e-*.sh
+debug-*.js
+fix_*.js
+
+# Jest configuration
+jest.config.js
+jest.*.config.js
+
+# Scripts de teste e desenvolvimento
+**/scripts/test-*
+**/scripts/demo-*
+**/scripts/debug-*
+**/scripts/e2e-*
+**/scripts/fix_*
+
+# Documentação de desenvolvimento
+*_SUMMARY.md
+*_GUIDE.md
+*_CLEANUP.md
+*_STANDARDIZATION.md
+*_VERIFICATION.md
+PERMISSION_*.md
+CLEANUP_*.md
+SYNTAX_*.md
+
+# ==============================================================================
+# PERMITIR APENAS SCRIPTS ESSENCIAIS DE PRODUÇÃO
+# ==============================================================================
+
+# Scripts desnecessários (excluir)
+account-service/scripts/test-*
+account-service/scripts/demo-*
+account-service/scripts/debug-*
+account-service/scripts/e2e-*
+account-service/scripts/fix_*
+account-service/scripts/*.sql
+
+# Scripts de produção necessários são permitidos por padrão
+
+# ==============================================================================
+# ARQUIVOS DE SISTEMA E TEMPORÁRIOS
+# ==============================================================================
+
+# Sistema operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==============================================================================
+# DOCKER E DEPLOY
+# ==============================================================================
+
+# Docker (manter apenas essenciais)
+.dockerignore
+
+# ==============================================================================
+# PERMITIR ARQUIVOS ESSENCIAIS DE PRODUÇÃO
+# ==============================================================================
+
+# Arquivos de configuração principais
+!package.json
+!package-lock.json
+!.env.example
+!.env.blacklist.example
+!docker-compose.yml
+!Dockerfile
+!README.md
+
+# Código fonte
+!src/
+!migrations/
+!docs/
+
+# Scripts essenciais apenas
+!scripts/migrate.js
+!scripts/init-system-roles.js
+!scripts/assign-root-roles.js
+!scripts/clean-database-keep-system.js
+!scripts/start-production.sh
+!add-production-files.sh
+
+# ==============================================================================
+# EXCLUIR TUDO MAIS NÃO ESSENCIAL
+# ==============================================================================
+
+# Exemplos e documentação de desenvolvimento
+examples/
+PRODUCTION_FILES_GUIDE.md
