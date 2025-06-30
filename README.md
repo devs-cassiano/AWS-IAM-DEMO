@@ -306,16 +306,6 @@ node scripts/assign-root-roles.js
 - **Login**: `POST /api/v1/auth/login`
 - **Verificar roles**: `GET /api/v1/users/roles`
 - **Resultado esperado**: Role `root` com acesso administrativo completo
-#   "success": true,
-#   "data": [
-#     {
-#       "id": "root-role-id",
-#       "name": "root",
-#       "description": "Full administrative access"
-#     }
-#   ]
-# }
-```
 
 ### 📋 Scripts Disponíveis para Configuração
 
@@ -737,23 +727,4 @@ npm run lint
 npm run build
 ```
 
-## 📄 Licença
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-## 👥 Suporte
-
-- 📧 **Email**: support@iam-platform.com
-- 🐛 **Issues**: [GitHub Issues](https://github.com/user/iam-platform-js/issues)
-- 📖 **Documentação**: [Wiki](https://github.com/user/iam-platform-js/wiki)
-- 💬 **Discord**: [Comunidade](https://discord.gg/iam-platform)
-
----
-
-<p align="center">
-  <strong>🛡️ IAM Platform - Segurança e Controle de Acesso para Aplicações Modernas</strong>
-</p>
-
-<p align="center">
-  Feito com ❤️ pela comunidade | Contribuições são bem-vindas!
-</p>
